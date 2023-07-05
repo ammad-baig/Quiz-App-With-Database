@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ADD Questions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark bg-gradient">
+    <h1 class="text-center display-2 fw-bold text-white text-decoration-underline p-4">Add Quiz</h1>
+
+    <div class="container">
+      <div class="p-2">
+        <textarea
+          name=""
+          placeholder="Add Questions"
+          class="p-2 fs-5 w-100 rounded border-0 shadow bg-white"
+          id="question"
+          cols="30"
+          rows="5"
+        ></textarea>
+      </div>
+      <div class="p-2 text-center">
+        <input
+          type="text"
+          class="p-2 px-4 fs-5 w-100 rounded-pill border-0 shadow bg-white"
+          name=""
+          id="option"
+        />
+        <button onclick="addOption()" class="btn btn-outline-warning px-5 m-3 ">Add</button>
+      </div>
+      <div>
+        <ol id="optionParent"></ol>
+      </div>
+      <div>
+        <p class="bg-gradient bg-danger bg-opacity-50 text-white fs-4 rounded-pill p-3" id="correctAnswer">Correct Answer</p>
+      </div>
+      <div class="text-center">
+        <p onclick="submitQuestion()" class="btn btn-outline-primary  ">Submit Question</p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="addQuiz.js"></script>
+  </body>
+</html>
